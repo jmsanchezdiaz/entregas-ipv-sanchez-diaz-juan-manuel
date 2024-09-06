@@ -1,0 +1,237 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://entities/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/textures/background.png" type="Texture" id=2]
+[ext_resource path="res://Main.gd" type="Script" id=3]
+[ext_resource path="res://entities/world/TurretsSpawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://entities/world/Floor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://entities/world/Cubo.tscn" type="PackedScene" id=7]
+[ext_resource path="res://entities/world/Wall.tscn" type="PackedScene" id=8]
+
+[node name="Main" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 108, 349 )
+GRAVITY = 8.75
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+
+[node name="Floor" parent="." instance=ExtResource( 6 )]
+position = Vector2( 123, 512 )
+scale = Vector2( 14.468, 2.72 )
+
+[node name="Floor2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1200, 512 )
+
+[node name="Floor3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 709, 627 )
+
+[node name="Floor4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3230, 1039 )
+scale = Vector2( 50, 2.72 )
+
+[node name="TurretsSpawner" parent="." instance=ExtResource( 4 )]
+position = Vector2( 540, 90 )
+
+[node name="TurretsSpawner3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2961, 717 )
+
+[node name="TurretsSpawner4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4146, 717 )
+
+[node name="TurretsSpawner2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1230, 74 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Cubo" parent="." instance=ExtResource( 7 )]
+position = Vector2( 672, 376 )
+
+[node name="Cubo13" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1885, 569 )
+
+[node name="Cubo16" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1926, 610 )
+
+[node name="Cubo14" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1893, 515 )
+
+[node name="Cubo15" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1839, 572 )
+
+[node name="Cubo17" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1758, 567 )
+
+[node name="Cubo18" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1799, 608 )
+
+[node name="Cubo19" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1766, 513 )
+
+[node name="Cubo20" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1712, 570 )
+
+[node name="Cubo21" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2035, 726 )
+
+[node name="Cubo22" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2076, 767 )
+
+[node name="Cubo23" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2043, 672 )
+
+[node name="Cubo24" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1989, 729 )
+
+[node name="Cubo25" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2035, 726 )
+
+[node name="Cubo26" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2076, 767 )
+
+[node name="Cubo27" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2043, 672 )
+
+[node name="Cubo28" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1989, 729 )
+
+[node name="Cubo29" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1865, 274 )
+
+[node name="Cubo30" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1906, 315 )
+
+[node name="Cubo31" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1873, 220 )
+
+[node name="Cubo32" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2015, 431 )
+
+[node name="Cubo33" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2056, 472 )
+
+[node name="Cubo34" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2023, 377 )
+
+[node name="Cubo35" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1969, 434 )
+
+[node name="Cubo36" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2015, 431 )
+
+[node name="Cubo37" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2056, 472 )
+
+[node name="Cubo38" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2023, 377 )
+
+[node name="Cubo39" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1969, 434 )
+
+[node name="Cubo40" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1699, 678 )
+
+[node name="Cubo41" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1740, 719 )
+
+[node name="Cubo42" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1707, 624 )
+
+[node name="Cubo43" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1849, 835 )
+
+[node name="Cubo44" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1890, 876 )
+
+[node name="Cubo45" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1857, 781 )
+
+[node name="Cubo46" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1803, 838 )
+
+[node name="Cubo47" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1849, 835 )
+
+[node name="Cubo48" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1890, 876 )
+
+[node name="Cubo49" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1857, 781 )
+
+[node name="Cubo50" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1803, 838 )
+
+[node name="Cubo3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 672, 336 )
+
+[node name="Cubo2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 704, 352 )
+
+[node name="Cubo4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 640, 360 )
+
+[node name="Cubo5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2912, 205 )
+
+[node name="Cubo6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2912, 165 )
+
+[node name="Cubo7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2944, 181 )
+
+[node name="Cubo8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2880, 189 )
+
+[node name="Cubo9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4215, 178 )
+
+[node name="Cubo10" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4215, 138 )
+
+[node name="Cubo11" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4247, 154 )
+
+[node name="Cubo12" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4183, 162 )
+
+[node name="Wall" parent="." instance=ExtResource( 8 )]
+position = Vector2( -16, 224 )
+scale = Vector2( 1, 1.908 )
+
+[node name="Wall3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2369, 178 )
+scale = Vector2( 1, 1.908 )
+
+[node name="Wall8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1583, 915 )
+scale = Vector2( 1, 1.908 )
+
+[node name="Wall4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4799, 638 )
+scale = Vector2( 1, 1.908 )
+
+[node name="Wall7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4799, -11 )
+scale = Vector2( 1, 1.908 )
+
+[node name="Wall6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 230, 199 )
+rotation = -0.816814
+scale = Vector2( 1, 0.5 )
+
+[node name="Wall5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 901, 191 )
+scale = Vector2( 1, 0.5 )
